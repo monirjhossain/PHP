@@ -7,7 +7,8 @@
 	asort($country);
 
 	foreach ($country as $key => $value) {
-		
+		print_r($country);
+		echo "<pre>";
 	}
 
 ?>

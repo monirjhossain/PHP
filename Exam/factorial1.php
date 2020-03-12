@@ -1,23 +1,22 @@
-<form method="POST">
-	<input type="text" name="x">
-	<input type="submit" name="submit" value="submit">
-	
-</form>
-
 
 <?php
-
 	if(isset($_POST['submit'])){
-		$x = $_POST['x'];
+	$x = $_POST['x'];
 
-	function factorial($n){
-		if($n==0)
-		{
-			return 1;
-		}
-			return $n * factorial($n-1);
+	function factorial($n) { 
+
+	  if ($n === 0)
+	 {
+	    return 1;
+	 }
+	  return $n * factorial($n-1);
+         
 	}
-	echo factorial($n);
-	}
+	echo factorial($x);
+}
 
 ?>
+<form method="post">
+    <input type="text" name="x">
+    <input type="submit" name="submit" value="submit">    
+</form>

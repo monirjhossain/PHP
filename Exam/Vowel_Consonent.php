@@ -3,7 +3,7 @@
 
 	$myltr = $_POST['myltr'];
 
-	$ltrlower = strtolower($myltr);
+	$ltrlower = strtoupper($myltr);
 
 	if($ltrlower == 'a' || $ltrlower == 'e' || $ltrlower == 'i' || $ltrlower == 'o' || $ltrlower == 'u'){
 

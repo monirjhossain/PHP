@@ -11,7 +11,7 @@
     $mn = $_POST['mynum'];
      
  
-        if($mn==0|| $mn==1){
+        if($mn==0 || $mn==1){
         	echo "0 and 1 will not accept";
         }
         else{
