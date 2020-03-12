@@ -3,15 +3,16 @@
 
 
 <?php
-	$bal = array("Minar"=>50, "Zara"=>30, "Nazmul"=>60, "Masum"=>40);
+	$country = array("Bangladesh"=>"Dhaka","Pakistan"=>"Lahor","India"=>"Dilhi","Srilanka"=>"Colombo","Nepal"=>"Kathmondu");
 
-	foreach ($bal as $user => $balance) {
-		
-		echo $user . " " . $balance . "<br>";
+	ksort($country);
 
+	foreach ($country as $key => $value) {
+		print_r($country);
+		echo "<pre>";
 	}
 
-	echo array_sum($bal);
+	
 
 
 ?>
