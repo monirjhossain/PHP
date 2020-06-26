@@ -36,7 +36,7 @@
 	$ok = false;
 	$msg = array();
 
-	if($size>204800){
+	if($size>1048576){
 
 		$msg[] = "Size is not allowed more than 200kb";
 		$ok = false;

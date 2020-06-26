@@ -9,16 +9,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+	<div class="container col-md-6">
+		<div class="list-group">
 	<?php 
 
-	$numbers = array(10, 15, 25);
-	$fruits = array("Apple", "Orange", "Grape");
-
 	//Associative Array
-	$students = array("Amena"=>80, "Rubel"=>82, "Sohrab"=>85); ?>
+	$students = array("Amena"=>80, "Rubel"=>82, "Sohrab"=>85, "Razib"=>90, "Monir"=>96); 
 
-	<table class="table table-hover">
+	?>
+
+	<table class="table table-hover ">
 		<tr>
 			<th>Name</th>
 			<th>Marks</th>
@@ -33,6 +33,7 @@
 
 	?>
 	</table>
-	
+	</div>
+	</div>
 </body>
 </html>

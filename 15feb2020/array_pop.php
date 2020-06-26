@@ -4,7 +4,7 @@
 
 	echo "<pre>";
 
-	print_r($colors);
+	//print_r($colors);
 	array_pop($colors);
 	
 

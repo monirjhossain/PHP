@@ -29,10 +29,9 @@
 	echo "District: " .$district. " ";
 	echo "<br>";
 
-
 	}
-
 	?>
+
 	<h2>Data sending to server using form</h2>
 	<form action="action.php" method="POST">
 		<label for="">First Name:</label>

@@ -19,7 +19,9 @@
 
     <?php
 
-    for($i = 0; $i<count($fruits); $i++) { ?>
+    for($i = 0; $i<count($fruits); $i++) { 
+
+    ?>
       
   
     <a href="#" class="list-group-item"><?php echo $fruits[$i]; ?></a>

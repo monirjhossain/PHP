@@ -16,7 +16,7 @@
 		echo $fruits[2].",";
 
 		for($i = 0; $i<count($fruits); $i++) { 
-			print $fruits[$i] . "<br>";
+			echo $fruits[$i] . "<br>";
 		}
 
 
