@@ -1,0 +1,15 @@
+DELIMITER // 
+CREATE PROCEDURE data_insert(
+IN n_val CHAR(50),
+IN e_val CHAR(30),
+IN m_val CHAR(20),
+IN g_val CHAR(10)
+) 
+BEGIN 
+INSERT INTO student_info(id, name, email, mobile, gender) 
+VALUES(NULL, n_val, e_val, m_val, g_val); 
+END;
+//
+DELIMITER ;
+
+CALL data_insert('Rahim', 'rahim@gmail.com', '01778558', 'Male');

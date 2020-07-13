@@ -42,7 +42,9 @@
 		$ok = false;
 
 	}elseif(!in_array($ext, $allowedTypes)){
+
 		$ok = false;
+		
 		$msg[] = "File must be jpg, png or jpeg";
 
 	}
