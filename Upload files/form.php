@@ -1,3 +1,10 @@
+	<?php 
+
+	require("class.php");
+	$file = new Image();
+
+	 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +12,20 @@
 	<title>Upload files with PHP oop</title>
 </head>
 <body>
-
+	
 	<?php 
 
-	if($_SERVER['REQUEST_METHOSE'] == "POST")
+	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
+		if($_FILES['myfile']['error']==0){
 
+			$file->fileUpload($_FILES['myfile']);
+		}else{
+			echo "Select a file then try";
+		}
+	}
+	echo "<pre>";
+	print_r($_FILES);
 	 ?>
 
 	

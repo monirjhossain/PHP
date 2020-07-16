@@ -10,6 +10,7 @@
     if($_SERVER['REQUEST_METHOD']=='POST'){
         
         extract($_POST);
+        if(preg_match(pattern, subject)){}
         //Email validation
         if(filter_var($email, FILTER_VALIDATE_EMAIL) == true){
             echo "<h3 class='valid'>$email valided</h3>";
