@@ -1,0 +1,6 @@
+ID	--CITY	--COUNTRY
+1	--Dhaka	--Bangladesh
+2	--Korachi	--Pakistan
+3	--Kathmondu	--Srilanka
+4	--Dilhi	India
+5	--Melborn	--Australia

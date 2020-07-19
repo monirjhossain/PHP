@@ -13,22 +13,6 @@
 </head>
 <body>
 	
-	<?php 
-
-	if($_SERVER['REQUEST_METHOD'] == "POST"){
-
-		if($_FILES['myfile']['error']==0){
-
-			$file->fileUpload($_FILES['myfile']);
-		}else{
-			echo "Select a file then try";
-		}
-	}
-	echo "<pre>";
-	print_r($_FILES);
-	 ?>
-
-	
 	<h3>File Upload</h3>
 	<form action="" method="POST" enctype="multipart/form-data">
 		<table>
@@ -42,3 +26,20 @@
 	</form>
 </body>
 </html>
+
+<?php
+
+	if($_SERVER['REQUEST_METHOD']=='POST'){
+
+		if($_FILES['myfile']['error']==0){
+			$file->uploadFile($_FILES['myfile']);
+		}else{
+			echo "Select file then try again";
+		}
+		
+	}
+
+
+
+
+?>

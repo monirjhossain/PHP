@@ -1,10 +1,10 @@
 <?php
-	class File {
+	class Image {
 		
 		private $supportFormats = ['image/png', 'image/jpeg', 'image/jpg','application/pdf'];
 		private $supportsize = 1000000;
 				
-		public function uploadFile($file){
+		public function fileUpload($file){
 			
 			if(in_array($file['type'], $this->supportFormats)) {
 

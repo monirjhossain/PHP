@@ -9,7 +9,7 @@ header("HTTP/1.0 401 Unauthorized");
 exit;
 }
 /* If $_SERVER['PHP_AUTH_USER'] is blank, the user has not yet beenprompted for the authentication information.*/
-if (! isset($_SERVER['PHP_AUTH_USER'])) {
+if (!isset($_SERVER['PHP_AUTH_USER'])) {
 
 	authenticate_user();
 

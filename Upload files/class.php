@@ -5,7 +5,7 @@
 		private $fileSize = 1000000;
 
 
-		public function fileUpload($file){
+		public function uploadFile($file){
 
 			if(in_array($file['type'], $this->fileFormates)){
 

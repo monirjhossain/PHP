@@ -6,7 +6,7 @@
 		public $clock_brand;
 
 
-		public function displsyClock(){
+		public function displayClock(){
 			$product = fopen("product.txt", "r");
 
 
@@ -22,7 +22,7 @@
 	}
 
 	$clock = new Clock();
-	echo $clock->displsyClock();
+	echo $clock->displayClock();
 	//readtext($product);
 
  ?>
