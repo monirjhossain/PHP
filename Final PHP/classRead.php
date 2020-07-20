@@ -1,10 +1,6 @@
 <?php 
 
 	class Country{
-		public $id;
-		public $city;
-		public $country1;
-
 
 		public function CountryName(){
 			$country = fopen('countryList.txt', 'r');
