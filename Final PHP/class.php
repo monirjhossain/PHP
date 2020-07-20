@@ -2,7 +2,7 @@
 
 	class Image{
 		private $fileFormates = ['image/jpg', 'image/jpeg', 'image/png', 'application/pdf'];
-		private $fileSize = 16777216;
+		private $fileSize = 1000000;
 
 
 		public function uploadFile($file){
